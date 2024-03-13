@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>User Registration</title>
+</head>
+<body>
+  <form id="userForm">
+    <h3>طلب توظيف</h3>
+    <br>
+    <label>البيانات الشخصية</label>
+    <div class="sub-container" id="personalInfo">
+<!-- <label for="nameInput">الاسم:</label> -->
+    <input type="text" id="nameInput" placeholder="الاسم رباعي" required>
+    <!-- <label for="ageInput">العمر:</label> -->
+    <input type="text" id="ageInput" placeholder="تاريخ الميلاد مثلا 22/10/2004" required>
+    <input type="text" id="mobileInput" placeholder="رقم الجوال مثال 0791234567" required>
+    <input type="text" id="emailInput" placeholder="البريد الالكتروني  مثال acb@gmail.com" required>
+    </div>
+    
+
+    <br>
+    <label>المؤهلات:</label>
+    <div class="sub-container" id="qualifications-container">
+      <div class="qualification-entry">
+        <div class="input-group">
+          <!-- <label for="qualification">المؤهل</label> -->
+          <input type="text" class="qualification" placeholder="المؤهل" required>
+        </div>
+        <div class="input-group">
+          <!-- <label for="qualificationYear">سنة التخرج</label> -->
+          <input type="text" class="qualificationYear" placeholder="سنة الحصول على المؤهل مثال 2009  " required>
+        </div>
+      </div>
+    </div>
+    <button type="button" id="addQualificationButton" style="display:none;">إضافة مؤهل</button>
+
+    <br>
+    <label>الخبرات:</label>
+    <div class="sub-container" id="experiences-container">
+      <div class="experience-entry">
+        <div class="input-group">
+          <!-- <label for="nationality">جهة العمل</label> -->
+          <input type="text" class="experience" placeholder="جهة العمل" required>
+        </div>
+        <div class="input-group">
+          <!-- <label for="passport">المده</label> -->
+          <input type="text" class="passport" placeholder="عدد سنوات او شهور الخبرة مثال 4 سنوات او 3 شهور" required>
+        </div>
+      </div>
+    </div>
+    <button type="button" id="addExperienceButton" style="display:none;">إضافة خبرة</button>
+    <br>
+    <input type="submit" value="حفظ البيانات">
+  </form>
+  <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

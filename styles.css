@@ -1,0 +1,122 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  direction: rtl;
+}
+
+#userForm {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(146, 4, 122, 0.1);
+  width: 90%;
+  /* Set a fixed width for the form */
+  margin: 0 auto;
+  /* Center the form on the page */
+
+}
+
+h3 {
+  text-align: center;
+  color: #555;
+
+
+}
+
+h5 {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.sub-container {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  padding: 6px;
+  border-radius: 4px;
+  background-color: rgb(252, 192, 232);
+
+}
+
+.experience-entry {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 4px 4px 4px 4px;
+
+
+}
+
+.qualification-entry {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 4px 4px 4px 4px;
+
+}
+
+.input-group {
+  flex: 1;
+  margin-right: 10px;
+
+}
+
+.input-qualification-group {
+  flex: 1;
+  margin-right: 10px;
+
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input[type="submit"] {
+  background-color: rgb(235, 118, 196);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(202, 87, 164);
+}
+
